@@ -9,7 +9,7 @@ public class Cliente {
 
     }
 
-    public String getNomeCompleto() {
+    public String getPrimeiroNome() {
         if (this.nomeCompleto == null) {
             return "Nome não informado";
         }
@@ -18,6 +18,9 @@ public class Cliente {
         }
         public String nomeMaiusculo(){
             return this.nomeCompleto.toUpperCase();
+        }
+        public String primeiraLetra(){
+        return this.nomeCompleto.substring(0, 1);
         }
 }
 
