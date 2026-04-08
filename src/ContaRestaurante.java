@@ -45,13 +45,13 @@ public class ContaRestaurante {
     public void exibirResumo() {
         Pedido[] pedidos = {pedido1, pedido2, pedido3};
 
-        // Informações do Cliente
+
         System.out.println("Cliente: " + cliente.nomeMaiusculo());
         System.out.println("Primeiro nome: " + cliente.getPrimeiroNome());
         System.out.println("Mesa: " + cliente.mesa);
         System.out.println("\nPedidos:");
 
-        // Laço para os pedidos
+
         for (int i = 0; i < pedidos.length; i++) {
             System.out.printf("%d - %s | Qtd: %d | Total: R$ %.2f%n",
                     (i + 1),
@@ -61,7 +61,7 @@ public class ContaRestaurante {
             );
         }
 
-        // Resumo financeiro
+
         System.out.println("\n--------------------------");
         System.out.printf("Subtotal: R$ %.2f%n", calcularSubtotal());
         System.out.printf("Taxa de serviço: R$ %.2f%n", calcularTaxaServico());
