@@ -20,8 +20,9 @@ public class Cliente {
             return this.nomeCompleto.toUpperCase();
         }
         public String primeiraLetra(){
-        return this.nomeCompleto.substring(0, 1);
+        return this.nomeCompleto.substring(0, 1).toUpperCase();
         }
+
 }
 
 

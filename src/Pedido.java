@@ -3,6 +3,7 @@ public class Pedido {
     double valorUnitario;
     int quantidade;
 
+
     Pedido(String descricao, double valorUnitario, int quantidade){
         this.descricao = descricao;
         this.valorUnitario = valorUnitario;
